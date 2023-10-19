@@ -14,9 +14,9 @@ high_prizepicks_line = np.array([17,	19.5,	15.5,	16.5,	14.5,	18.5,])
 
 #calculates the errors, average of errors, and standard deviation of low errors to determine variation of errors. 
 low_errors = actual_low_scores - projected_low_scores
-low_error_mean = sum(low_errors)/len(low_errors)
+low_mean_error = sum(low_errors)/len(low_errors)
 low_standard_dev = stat.stdev(low_errors)
-coef_of_variation = low_standard_dev/low_error_mean
+coef_of_variation = low_standard_dev/low_errors
 
 
  
