@@ -1,3 +1,3 @@
-import scipy.stats as sp
+from scipy import constants
 
-print(sp.liter)
+print(constants.pi)
