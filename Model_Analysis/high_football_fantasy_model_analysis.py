@@ -2,12 +2,12 @@ import numpy as np
 nope = "nope"
 yes = "yes"
 
-right_or_not = np.array([nope,	yes,	yes,	nope,	yes,	nope,	nope,	yes,	yes,	nope,	yes,	yes,	yes,	yes,])
+right_or_not = np.array([yes,	nope,	yes,	nope,	yes,	yes,	yes,	yes,	yes,	nope,	yes,	yes,	yes,	nope,])
 num_right = np.count_nonzero(right_or_not == yes)
-hit_percentages = np.array([52.75,	46.094,	53.68,	60.774,	41.36,	45.577,	50.67,	34.137,	40.453,]) 
+hit_percentages = np.array([51.31,	53.36,	74.73,	72.74,	63.14,	53.96,	53.96,	66.03,	64.96,	72.70,	68.50,	63.60,	58.82,	56.43,]) 
 model_prediction_percentages = np.mean(hit_percentages)
 
-print("The number of correct is:", (num_right/len(right_or_not))*100)
-print(model_prediction_percentages)
+print("The percentage that hit is:", (num_right/len(right_or_not))*100)
+print(f"The model predicts that {model_prediction_percentages} of the bets will be correct.")
 
 
