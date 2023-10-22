@@ -1,6 +1,6 @@
 #contains list of all the collected data
 import numpy as np
-import pandas as np
+import pandas as pd
 import statistics as stat
 from matplotlib import pyplot as plt
 import math
