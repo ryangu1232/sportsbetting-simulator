@@ -42,4 +42,4 @@ results = np.array([yes,	nope,	yes,	nope,	yes,	yes,	yes,	yes,	yes,	nope,	yes,	ye
 high_prob = compute_probability(high_prizepicks_line, projected_high_scores, high_mean_error, high_standard_dev, array_of_prob_percentages)
 model_average = np.average(high_prob)
 actual_results = (np.count_nonzero(results == "yes")/(len(results)+1))*100
-print(model_average)
+print(array_of_prob_percentages)
