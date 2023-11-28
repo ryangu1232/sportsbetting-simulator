@@ -36,5 +36,4 @@ def compute_probability(prize_picks_line, espn_projection, mean_error, std_devia
 
 prob = compute_probability(prize_picks_line, espn_projection, high_mean_error, high_standard_dev)
 print(f"The probability of it hitting is {prob}")
-print(len(actual_pra))
 
